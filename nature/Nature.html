@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Inconsolata:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="Nature-reset.css">
+    <link rel="stylesheet" href="Nature-style.css">
+    <title>Nature</title>
+</head>
+
+<body>
+    <!-- <input type="checkbox" id="check"> -->
+
+
+
+    <div class="viskas">
+        <div id="header-container">
+            <header>
+                <!-- *****************Pirmas header konteineris****************** -->
+                <div class="first-container">
+                    <p>Free Shipping and Returns above $100!</p>
+                </div>
+
+                <!-- ***********************Antras header konteineris************* -->
+                <div class="second-container">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <i class="fas fa-bars" id="btn"></i>
+                    </label>
+                    <div class="sidebar">
+                        <div class="kryzius">
+                            <label for="check">
+                                <a href=""></a><i class="fas fa-times" id="cancel"></i></a>
+                            </label>
+                        </div>
+                        <div class="sec-head">
+                            <ul class="nature-menu__ul">
+                                <li><a href="">Home</a></li>
+                                <li class="covered"></li><a href="">Collections</a>
+                                <!-- <select name="sarasas">
+                                        <option value="none"></option>
+                                        <option><a href="#">Birds</a></option>
+                                        <option><a href="#">Fishes</a></option>
+                                        <option><a href="#">Flowers</a></option>
+                                        <option><a href="#">Octopuses</a></option>
+                                        <option><a href="#">Plants</a></option>
+                                        <option><a href="#">On Sale</a></option>
+                                    </select> -->
+                                </li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Sign In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- *************Header Nature logo************ -->
+                    <div class="nature-container__logo">
+                        <a href="#">
+                            <img src="//cdn.shopify.com/s/files/1/0931/8478/files/logo-1_160x.png?v=1476209221" srcset="//cdn.shopify.com/s/files/1/0931/8478/files/logo-1_160x.png?v=1476209221 1x,
+                    //cdn.shopify.com/s/files/1/0931/8478/files/logo-1_160x@2x.png?v=1476209221 2x,
+                    //cdn.shopify.com/s/files/1/0931/8478/files/logo-1_160x@3x.png?v=1476209221 3x
+                    " alt="Nature" itemprop="logo" style="width: 160px; max-width: 100%; display: block;">
+                        </a>
+                    </div>
+
+                    <!-- ***************Header dešinės pusės ikonos*************** -->
+                    <div class="right__icons">
+                        <a href="#">
+                            <i class="user"></i>
+                            <!-- <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik00MzcuMDIsMzMwLjk4Yy0yNy44ODMtMjcuODgyLTYxLjA3MS00OC41MjMtOTcuMjgxLTYxLjAxOEMzNzguNTIxLDI0My4yNTEsNDA0LDE5OC41NDgsNDA0LDE0OA0KCQkJQzQwNCw2Ni4zOTMsMzM3LjYwNywwLDI1NiwwUzEwOCw2Ni4zOTMsMTA4LDE0OGMwLDUwLjU0OCwyNS40NzksOTUuMjUxLDY0LjI2MiwxMjEuOTYyDQoJCQljLTM2LjIxLDEyLjQ5NS02OS4zOTgsMzMuMTM2LTk3LjI4MSw2MS4wMThDMjYuNjI5LDM3OS4zMzMsMCw0NDMuNjIsMCw1MTJoNDBjMC0xMTkuMTAzLDk2Ljg5Ny0yMTYsMjE2LTIxNnMyMTYsOTYuODk3LDIxNiwyMTYNCgkJCWg0MEM1MTIsNDQzLjYyLDQ4NS4zNzEsMzc5LjMzMyw0MzcuMDIsMzMwLjk4eiBNMjU2LDI1NmMtNTkuNTUxLDAtMTA4LTQ4LjQ0OC0xMDgtMTA4UzE5Ni40NDksNDAsMjU2LDQwDQoJCQljNTkuNTUxLDAsMTA4LDQ4LjQ0OCwxMDgsMTA4UzMxNS41NTEsMjU2LDI1NiwyNTZ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /> -->
+                        </a>
+
+                        <a href="#">
+                            <i class="serch"></i>
+                            <!-- <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDMzMCAzMzAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMzMCAzMzA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGlkPSJYTUxJRF8yMl8iIGQ9Ik0zMjUuNjA2LDMwNC4zOTRMMjIzLjMyOSwyMDIuMTE3YzE2LjcwNi0yMS4yNTYsMjYuNjgyLTQ4LjA0LDI2LjY4Mi03Ny4xMTENCglDMjUwLjAxMSw1Ni4wNzcsMTkzLjkzNCwwLDEyNS4wMDUsMEM1Ni4wNzcsMCwwLDU2LjA3NywwLDEyNS4wMDVDMCwxOTMuOTMzLDU2LjA3NywyNTAuMDEsMTI1LjAwNSwyNTAuMDENCgljMjkuMDcsMCw1NS44NTUtOS45NzUsNzcuMTExLTI2LjY4MWwxMDIuMjc4LDEwMi4yNzdDMzA3LjMyMiwzMjguNTM2LDMxMS4xNjEsMzMwLDMxNSwzMzBjMy44MzksMCw3LjY3OC0xLjQ2NCwxMC42MDYtNC4zOTQNCglDMzMxLjQ2NCwzMTkuNzQ5LDMzMS40NjQsMzEwLjI1MSwzMjUuNjA2LDMwNC4zOTR6IE0zMCwxMjUuMDA1QzMwLDcyLjYxOSw3Mi42MTksMzAsMTI1LjAwNSwzMA0KCWM1Mi4zODYsMCw5NS4wMDYsNDIuNjE5LDk1LjAwNiw5NS4wMDVjMCw1Mi4zODYtNDIuNjIsOTUuMDA1LTk1LjAwNiw5NS4wMDVDNzIuNjE5LDIyMC4wMSwzMCwxNzcuMzkxLDMwLDEyNS4wMDV6Ii8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" /> -->
+                        </a>
+
+                        <a href="#">
+                            <i class="cart"></i>
+                            <!-- <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iX3gzMV9fcHgiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTE5LjQxMyAxOWgtOS40MDNjLTEuMTE1IDAtMi4xMDMtLjc0Ny0yLjQwMS0xLjgxNmwtMy4xNzktMTEuMDk2Yy0uMTgtLjY0Mi0uNzcxLTEuMDg4LTEuNDQtMS4wODhoLTIuNDljLS4yNzYgMC0uNS0uMjI0LS41LS41cy4yMjQtLjUuNS0uNWgyLjQ5YzEuMTE1IDAgMi4xMDMuNzQ3IDIuNDAxIDEuODE2bC42MjcgMi4xODRoMTYuNDgxYy40NzkgMCAuOTE4LjIyIDEuMjAzLjYwNC4yODYuMzg0LjM3MS44NjguMjMzIDEuMzI2bC0yLjE1MSA3LjM1Yy0uMzQ2IDEuMDM2LTEuMjk3IDEuNzItMi4zNzEgMS43MnptLTEzLjEwOS0xMCAyLjI2NyA3LjkxMmMuMTc5LjY0Mi43NyAxLjA4OCAxLjQzOSAxLjA4OGg5LjQwM2MuNjM0IDAgMS4yMTYtLjQxOSAxLjQxNi0xLjAxOGwyLjE0OS03LjMzOGMuMDQ2LS4xNTMuMDE3LS4zMTQtLjA3OC0uNDQyLS4wOTUtLjEyOS0uMjQxLS4yMDItLjQwMS0uMjAyeiIvPjxwYXRoIGQ9Im0xMSAyNGMtMS4xMDMgMC0yLS44OTctMi0ycy44OTctMiAyLTIgMiAuODk3IDIgMi0uODk3IDItMiAyem0wLTNjLS41NTIgMC0xIC40NDktMSAxcy40NDggMSAxIDEgMS0uNDQ5IDEtMS0uNDQ4LTEtMS0xeiIvPjxwYXRoIGQ9Im0xOCAyNGMtMS4xMDMgMC0yLS44OTctMi0ycy44OTctMiAyLTIgMiAuODk3IDIgMi0uODk3IDItMiAyem0wLTNjLS41NTIgMC0xIC40NDktMSAxcy40NDggMSAxIDEgMS0uNDQ5IDEtMS0uNDQ4LTEtMS0xeiIvPjwvc3ZnPg==" /> -->
+                        </a>
+
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- ***********************trečias header konteineris***************    -->
+        <div class="third-container nature__links">
+            <ul>
+                <li><a href="#">birds</a></li>
+                <li><a href="#">fishes</a></li>
+                <li><a href="#">flowers</a></li>
+                <li><a href="#">plants</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <!-- ******************ketvirtas konteineris************ -->
+            <div class="beauty__nature__img">
+                <h1>The Beauty of Nature</h1>
+                <span>Explore our artworks</span>
+            </div>
+
+            <!-- *********************penktas konteineris************ -->
+
+            <div class="birds__flowers__plants__container">
+
+                <div class="birds__1">
+                    <a href="#"><img src="//cdn.shopify.com/s/files/1/0931/8478/collections/birds.jpg?v=1438590023">
+                        <h4>Birds</h4>
+                    </a>
+                </div>
+
+                <div class="flowers__1">
+                    <a href="#"><img src="//cdn.shopify.com/s/files/1/0931/8478/collections/plants.jpg?v=1438589994">
+                        <h4>Flowers</h4>
+                    </a>
+
+                </div>
+
+                <div class="plants__1">
+                    <a href="#"><img src="//cdn.shopify.com/s/files/1/0931/8478/collections/plants.png?v=1437660768">
+                        <h4>Plants</h4>
+                    </a>
+                </div>
+            </div>
+
+            <!-- *******************šeštas konteineris - citata**********  -->
+            <div class="qoute__block">
+                <div class="quote__row">
+                    <blockquote>
+                        — Study nature, love nature, stay close to nature. It will never fail you. Frank Lloyd Wright.
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- ***************septintas blokas- paveikslai su kainomis********* -->
+
+            <div class="picture___block">
+                <div class="picture">
+                    <a href="#">
+                        <img
+                            src="//cdn.shopify.com/s/files/1/0931/8478/products/img_birds_bc4f8950-f937-4b4f-8121-7fe805aacf64_4472x4472.jpg?v=1568756507 4472w,">
+                        <div class="price">From €31,95</div>
+                    </a>
+                </div>
+
+
+                <div class="picture">
+                    <a href="#">
+                        <img
+                            src="//cdn.shopify.com/s/files/1/0931/8478/products/img_plant_4472x4472.jpg?v=1568747966 4472w,">
+                        <div class="price">€56,95</div>
+                    </a>
+                </div>
+
+
+                <div class="picture">
+                    <a href="#">
+                        <img
+                            src="//cdn.shopify.com/s/files/1/0931/8478/products/img_egg_4472x4472.jpg?v=1568747966 4472w,">
+                        <div class="price">€36,95</div>
+
+                        <div class="sold-out__tag">
+                            <div class="sold-out__wrapper">
+                                <div class="inscription">
+                                    <span>
+                                        Sold Out
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+            <!-- *******************aštuntas konteineris - 4-3 ikonėlės************************* -->
+
+            <div class="icons__block__main">
+
+                <div class="icons__block__4">
+                    <div class="block__row sustainable">
+                        <i></i>
+                        <h3>Sustainable Production</h3>
+                    </div>
+
+                    <div class="block__row worldwide">
+                        <i></i>
+                        <h3>Shipping Worldwide</h3>
+                    </div>
+
+                    <div class="block__row recycled">
+                        <i></i>
+                        <h3>Using Recycled Materials</h3>
+                    </div>
+
+                    <div class="block__row returns">
+                        <i></i>
+                        <h3>Free Returns within 14 days</h3>
+                    </div>
+                </div>
+
+                <div class="icons__block__3">
+                    <div class="block__row payment-system">
+                        <i></i>
+                        <h3>Secure Payment System</h3>
+                    </div>
+
+                    <div class="block__row first-order">
+                        <i></i>
+                        <h3>20% Off on First Order</h3>
+                    </div>
+
+                    <div class="block__row local-products">
+                        <i></i>
+                        <h3>Local Products</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ***********************Devintas konteineris - blogas**************** -->
+
+            <div class="blog__container__main">
+                <!-- **************Pirmas 9k blokas-Biological*********** -->
+                <div class="blog__news-icon">
+                    <a href="#">
+                        <h2>News</h2>
+                    </a>
+                    <a href="#">
+                        <h2 class="wireless-block">
+                            <i class="wireless"></i>
+                        </h2>
+                    </a>
+                </div>
+
+                <div class="biological__block___big-launch__block">
+
+                    <div class="biological__block">
+                        <h1>
+                            <a href="#">Biological illustrations</a>
+                        </h1>
+                        <h3>
+                            Posted by Guille Lopez Gines on September 21, 2017
+                        </h3>
+                        <hr>
+                        <div class="text-blog">
+                            <p>
+                                Historically, biological illustrations have been in use since the beginning of man's
+                                exploration and attempts to understand the world around him.
+                                The paleolithic cave paintings were so detailed that we can even recognize species and
+                                breeds of many of the depicted animals today. For example,
+                                in the Chauvet-Pont-d'Arc Cave (circa 30,000 BC), at least 13 different species have
+                                been identified. In one prehistoric cave (circa 15,000 BC),
+                                there is a drawing of a mammoth with a darkened area where the heart should be. If this
+                                is indeed the intention of the illustration, it would be
+                                the world's first anatomical illustration. In the Alexandrian era (356 – 323 BC), the
+                                Greek physician Herophilus, now known as the father of anatomy, performed...
+                            </p>
+                        </div>
+
+                        <a class="biological__btn" href="#">read entire article</a>
+                        <div class="comment__tags">
+                            <div class="comment">
+                                <a class="ikonele__block1">
+                                    <i class="ikonele1">
+                                    </i>
+                                    <span>1</span>
+                                </a>
+                            </div>
+
+                            <div class="tags">
+                                <i class="ikonele2">
+                                </i>
+                                <a href="#">Biology</a>
+                                <a href="#">History</a>
+                                <a href="#">Inspiration</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- *********************antras9k blokas - big launch********** -->
+                    <div class="big-launch__block">
+                        <h1>
+                            <a href="#">The big launch</a>
+                        </h1>
+                        <h3>
+                            Posted by Guille Lopez Gines on September 21, 2017
+                        </h3>
+                        <hr>
+                        <div class="text-blog">
+                            <p>
+                                After much planning, decorating, sourcing, packaging, pricing, and more, it was time to
+                                launch.
+                                Celebrating with a small party for friends, family, and everyone in between, we finally
+                                shared
+                                our brand and products with the world. There’s no one way to start a business, so it was
+                                great
+                                to see everyone that helped us find our own way here in one room with us. Our launch was
+                                the
+                                perfect time to showcase our new collections and share some of our stories. Each
+                                collection and
+                                product is created using the finest materials, and designed exclusively for you. Our
+                                signature
+                                collection will soon grow into seasonal collections, and we’re hoping to offer more and
+                                more unique
+                                products as we get bigger and...
+                            </p>
+                        </div>
+
+                        <a class="biological__btn" href="#">read entire article</a>
+                        <div class="comment__tags">
+                            <div class="comment">
+                                <a class="ikonele__block1">
+                                    <i class="ikonele1">
+                                    </i>
+                                    <span>2</span>
+                                </a>
+                            </div>
+
+                            <div class="tags">
+                                <i class="ikonele2">
+                                </i>
+                                <a href="#">Store news</a>
+                                <a href="#">Team</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- *************************Subscribe to our newsletter******************* -->
+            <div class="newsletter__block__main">
+                <div class="newsletter__row">
+                    <div class="subscribe">
+                        <h1>Subscribe to our newsletter</h1>
+                        <p>Promotions, new products and sales. Directly to your inbox.</p>
+                    </div>
+
+                    <form method="post" action="/contacth#newsletter">
+                        <input type="hidden">
+                        <input type="hidden">
+
+                        <div class="table">
+                            <input type="hidden">
+                            <label for="email"></label>
+                            <input type="text" type="email" name="contact" placeholder="Your email" autocorrect="off"
+                                autocapitalize="off" id="email" aria-label="Your email">
+                            <span>
+                                <input type="submit" value="Subscribe">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ********************map-blokas-fonas***************** -->
+            <div class="map-background__block">
+                <div class="map-background__row">
+                    <div class="map-background__img"></div>
+                </div>
+
+                <!-- ********************map-blokas-info***************** -->
+                <div class="map-info__row">
+                    <h1>Our store</h1>
+                    <div>
+                        <p>1360 Lombard Street<br>
+                            San Francisco, CA
+                        </p>
+                        <p>Mon - Fri, 10am - 9pm<br>
+                            Saturday, 11am - 9pm<br>
+                            Sunday, 11am - 5pm
+                        </p>
+                    </div>
+
+                    <a href="#">directions</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- *****************Apačia**************** -->
+        <footer>
+            <div class="footer-top">
+                <div class="quick-links">
+
+                    <h3>Quick links</h3>
+                    <div class="quick-links__block">
+                        <div class="quick-links__row-1">
+                            <ul>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">News</a>
+                                </li>
+                                <li>
+                                    <a href="#">Collections</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="quick-links__row-2">
+                            <ul>
+                                <li>
+                                    <a href="#">Catalog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Contact info</h3>
+                    <div>
+                        <p>1360 Lombard Street<br>
+                            San Francisco, CA 94109<br>
+                            <a href="mailto:support@company.com">support@company.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sign-up">
+                    <h3>Sign up to our mailing list</h3>
+
+                    <form method="post" action="/contact#newsletterFooter">
+                        <input type="hidden" name="form_type" value="customer">
+                        <input type="hidden">
+                        <div class="table">
+                            <input type="hidden" name="contact" value="newsletter">
+                            <input class="text" type="email" name="contact" placeholder="Your email" autocorrect="off"
+                                autocapitalize="off" aria-label="Your email">
+                            <span>
+                                <input type="submit" value="join">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="social-media">
+                    <h3>Connect with us</h3>
+                    <p>
+                        <a href="#">
+                            <i class="facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="pinterest"></i>
+                        </a>
+                        <a href="#">
+                            <i class="instagram"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="left">
+                    <div class="text">
+                        © Copyright 2021,
+                        <a href="#">Nature</a>
+                        <a href="#">Powered by Shopify</a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <form method="post" action="/localization">
+                        <input type="hidden" name="form_type" value="localization">
+                        <input type="hidden">
+                        <input type="hidden" name="_method" value="put">
+                        <input type="hidden" name="return_to" value="/">
+                        <h2></h2>
+
+                        <div class="currency-box">
+                            <button type="button" aria-expanded="false" aria-controls="curency-list"
+                                aria-describedby="currency-heading" data-disclosure-toggle>
+                                EUR €
+                                <svg class="shopify-select-icon" viewBox="0 0 24 24">
+                                    <path d="M21 5.176l-9.086 9.353L3 5.176.686 7.647 12 19.382 23.314 7.647 21 5.176z">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <ul class="currency-list">
+                                <li>
+                                    <a href="#">AUD $</a>
+                                </li>
+                                <li>
+                                    <a href="#">EUR €</a>
+                                </li>
+                                <li>
+                                    <a href="#">GBP £</a>
+                                </li>
+                                <li>
+                                    <a href="#">JPY ¥</a>
+                                </li>
+                                <li>
+                                    <a href="#">USD $</a>
+                                </li>
+                            </ul>
+
+                            <input type="hidden" name="currency_code" value="EUR" data-disclosure-input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+
+
+</body>
+
+</html>
