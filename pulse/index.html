@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pulse</title>
+</head>
+
+<body>
+    <section class="promo">
+        <div class="container">
+            <div class="header">
+                <a href="#" class="header__logo">
+                    <i class="fas fa-running"></i>
+                    Run Smart
+                </a>
+                <div class="header__official">
+                    Oficialus atstovas
+                    <span>Garmin, Polar, Suunto</span>
+                </div>
+                <div class="header_contacts">
+                    <a href="tel:+370123456789" class="header__phone">
+                        +370 123456789
+                    </a>
+                    <button data-modal="consultation" class="button">Skambinti</button>
+                </div>
+            </div>
+            <div class="promo__wrapper">
+                <h1 class="promo__header">Pulsometro pasirinkimas</h1>
+                <div class="promo__subheader">Atsižvelgiant į tavo pasiruošimo lygį</div>
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="icons/main_screen/timer.png" alt="timer">
+                        pasirinktas laikas:
+                        10 min.
+                    </div>
+                    <div class="promo__icon"><img src="icons/main_screen/hand-cart.png" alt="hand-cart">
+                        Nemokamas Pristatymas
+                    </div>
+                    <div class="promo__icon"><img src="icons/main_screen/messages.png" alt="messages">
+                        Atsakysime į visus klausimus
+                    </div>
+                </div>
+                <button data-modal="consultation" class="button btn_main">Konsultuokis</button>
+                <div class="promo__link">
+                    arba
+                    <a href="#">Pereiti į katalogą</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2 class="title">MŪSŲ PRIVALUMAI</h2>
+            <div class="advantages__wrapper">
+                <div class="advantages__item">
+                    <img src="icons/advantages/cup.png" alt="cup" class="advantages__icon">
+                    <div class="advantages__subtitle">
+                        Dalinamės patirtimi
+                    </div>
+                    <div class="advantages__descr">
+                        Visda esame pasiruošę pasidalinti savo patirtimi,
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
+                    <div class="advantages__subtitle">
+                        Rūpinamės sveikata
+                    </div>
+                    <div class="advantages__descr">
+                        Dirmame tam,
+                        kad sportuodami pajustumėte naudą
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <img src="icons/advantages/shoe.png" alt="shoe" class="advantages__icon">
+                    <div class="advantages__subtitle">
+                        Konsultuojame
+                    </div>
+                    <div class="advantages__descr">
+                        Padedame įsisavinti teisingo bėgimo techniką<br>
+                        Bendreadarbiaujame su šio sporto entuziastais
+                        <a href="#">RUNNER'S WORLD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="consultation">
+        <div class="container">
+            <h2 class="title title_left">
+                Gaukite nemokamą konsultaciją
+            </h2>
+            <div class="consultation__descr">
+                Užpildykite žemiau esančius laukelius, <br>
+                o mes su Jumis nedelsiant susisieksime
+            </div>
+
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" required placeholder="Vardas" type="text">
+                <input name="phone" required placeholder="tel. numeris" type="number">
+                <input name="email" required placeholder="el. paštas" type="email">
+                <button class="button button_submit">Užsakyti konsiltaciją</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slide_1.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slide_2.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slide_3.jpg" alt="slide">
+                </div>
+            </div>
+            <button type="button" class="prev"><img src="icons/left.svg"></button>
+            <button type="button" class="next"><img src="icons/right.svg"></button>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h2 class="title">
+                Pulsometrų katalogas
+            </h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active">
+                    <div>Fitnesui</div>
+                </li>
+                <li class="catalog__tab">
+                    <div>Bėgimui</div>
+                </li>
+                <li class="catalog__tab">
+                    <div>Triatlonui</div>
+                </li>
+            </ul>
+
+            <div class="catalog__content catalog__content_active">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Pulsometras Polar FT1</div>
+                            <div class="catalog-item__descr">Pirmiesiems žingsniams širdies ritmo treniruotėje</div>
+                            <a href="#" class="catalog-item__link">Daugiau</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <li>Treniruotės metu išgirsite garsinį pranešimą apie norimą pulso dažnį;</li>
+                            <li>Pamatysite informatyvų grafinį tikslinių pulso treniruočių zonų indikatorių;</li>
+                            <li>Taip pat matysite informaciją apie kalorijų suvartojimą per treniruotę;</li>
+                            <li>Galite peržiūrėti 10 treniruočių duomenis.</li>
+                            <a href="#" class="catalog-item__back">atgal</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">60 €</div>
+                            <div class="catalog-item__price">55 €</div>
+                        </div>
+                        <button class="button button_mini">Pirkti</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Pulsometras Suunto M2</div>
+                            <div class="catalog-item__descr">Pulsometras pradinio lygio su patogiu medžiaginiu dirželiu
+                            </div>
+                            <a href="#" class="catalog-item__link">DAUGIAU</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Treniruotės metu išgirsite garsinį pranešimą apie norimą pulso dažnį;</li>
+                            <li>Pamatysite informatyvų grafinį tikslinių pulso treniruočių zonų indikatorių;</li>
+                            <li>Taip pat matysite informaciją apie kalorijų suvartojimą per treniruotę;</li>
+                            <li>Galite peržiūrėti 10 treniruočių duomenis.</li>
+                            <a href="#" class="catalog-item__back">atgal</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">80 €</div>
+                            <div class="catalog-item__price">75 €</div>
+                        </div>
+                        <button class="button button_mini">Pirkti</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Pulsometras Polar FT1</div>
+                            <div class="catalog-item__descr">Pirmiesiems žingsniams širdies ritmo treniruotėje</div>
+                            <a href="#" class="catalog-item__link">DAUGIAU</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Treniruotės metu išgirsite garsinį pranešimą apie norimą pulso dažnį;</li>
+                            <li>Pamatysite informatyvų grafinį tikslinių pulso treniruočių zonų indikatorių;</li>
+                            <li>Taip pat matysite informaciją apie kalorijų suvartojimą per treniruotę;</li>
+                            <li>Galite peržiūrėti 10 treniruočių duomenis.</li>
+                            <a href="#" class="catalog-item__back">atgal</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">90 €</div>
+                            <div class="catalog-item__price">85 €</div>
+                        </div>
+                        <button class="button button_mini">Pirkti</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Pulsometras Polar FT1</div>
+                            <div class="catalog-item__descr">Pirmiesiems žingsniams širdies ritmo treniruotėje</div>
+                            <a href="#" class="catalog-item__link">DAUGIAU</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Treniruotės metu išgirsite garsinį pranešimą apie norimą pulso dažnį;</li>
+                            <li>Pamatysite informatyvų grafinį tikslinių pulso treniruočių zonų indikatorių;</li>
+                            <li>Taip pat matysite informaciją apie kalorijų suvartojimą per treniruotę;</li>
+                            <li>Galite peržiūrėti 10 treniruočių duomenis.</li>
+                            <a href="#" class="catalog-item__back">atgal</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">65 €</div>
+                            <div class="catalog-item__price">60 €</div>
+                        </div>
+                        <button class="button button_mini">Pirkti</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Pulsometras Suunto M2</div>
+                            <div class="catalog-item__descr">Pulsometras pradinio lygio su patogiu medžiaginiu dirželiu
+                            </div>
+                            <a href="#" class="catalog-item__link">DAUGIAU</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Treniruotės metu išgirsite garsinį pranešimą apie norimą pulso dažnį;</li>
+                            <li>Pamatysite informatyvų grafinį tikslinių pulso treniruočių zonų indikatorių;</li>
+                            <li>Taip pat matysite informaciją apie kalorijų suvartojimą per treniruotę;</li>
+                            <li>Galite peržiūrėti 10 treniruočių duomenis.</li>
+                            <a href="#" class="catalog-item__back">atgal</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">85 €</div>
+                            <div class="catalog-item__price">80 €</div>
+                        </div>
+                        <button class="button button_mini">Pirkti</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Pulsometras Polar FT4</div>
+                            <div class="catalog-item__descr">Pagerinta Polar FT1 versija, turinti šias savybes:
+                            </div>
+                            <a href="#" class="catalog-item__link">DAUGIAU</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Treniruotės metu išgirsite garsinį pranešimą apie norimą pulso dažnį;</li>
+                            <li>Pamatysite informatyvų grafinį tikslinių pulso treniruočių zonų indikatorių;</li>
+                            <li>Taip pat matysite informaciją apie kalorijų suvartojimą per treniruotę;</li>
+                            <li>Galite peržiūrėti 10 treniruočių duomenis.</li>
+                            <a href="#" class="catalog-item__back">atgal</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">115 €</div>
+                            <div class="catalog-item__price">100 €</div>
+                        </div>
+                        <button class="button button_mini">Pirkti</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Pulsometras Polar FT1</div>
+                            <div class="catalog-item__descr">Pirmiesiems žingsniams širdies ritmo treniruotėje</div>
+                            <a href="#" class="catalog-item__link">DAUGIAU</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <li>Treniruotės metu išgirsite garsinį pranešimą apie norimą pulso dažnį;</li>
+                            <li>Pamatysite informatyvų grafinį tikslinių pulso treniruočių zonų indikatorių;</li>
+                            <li>Taip pat matysite informaciją apie kalorijų suvartojimą per treniruotę;</li>
+                            <li>Galite peržiūrėti 10 treniruočių duomenis.</li>
+                            <a href="#" class="catalog-item__back">atgal</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">120 €</div>
+                            <div class="catalog-item__price">110 €</div>
+                        </div>
+                        <button class="button button_mini">Pirkti</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Pulsometras Polar FT1</div>
+                            <div class="catalog-item__descr">Pirmiesiems žingsniams širdies ritmo treniruotėje</div>
+                            <a href="#" class="catalog-item__link">DAUGIAU</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Treniruotės metu išgirsite garsinį pranešimą apie norimą pulso dažnį;</li>
+                            <li>Pamatysite informatyvų grafinį tikslinių pulso treniruočių zonų indikatorių;</li>
+                            <li>Taip pat matysite informaciją apie kalorijų suvartojimą per treniruotę;</li>
+                            <li>Galite peržiūrėti 10 treniruočių duomenis.</li>
+                            <a href="#" class="catalog-item__back">atgal</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">100 €</div>
+                            <div class="catalog-item__price">95 €</div>
+                        </div>
+                        <button class="button button_mini">Pirkti</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Pulsometras Polar FT1</div>
+                            <div class="catalog-item__descr">Pirmiesiems žingsniams širdies ritmo treniruotėje</div>
+                            <a href="#" class="catalog-item__link">DAUGIAU</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Treniruotės metu išgirsite garsinį pranešimą apie norimą pulso dažnį;</li>
+                            <li>Pamatysite informatyvų grafinį tikslinių pulso treniruočių zonų indikatorių;</li>
+                            <li>Taip pat matysite informaciją apie kalorijų suvartojimą per treniruotę;</li>
+                            <li>Galite peržiūrėti 10 treniruočių duomenis.</li>
+                            <a href="#" class="catalog-item__back">atgal</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">100 €</div>
+                            <div class="catalog-item__price">95 €</div>
+                        </div>
+                        <button class="button button_mini">Pirkti</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.8872242039215!2d25.274171415989514!3d54.69401218061296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd940759d053b9%3A0x5ffe73d21d0c0c5c!2sCUP%20shopping%20mall!5e0!3m2!1sen!2slt!4v1637526646254!5m2!1sen!2slt" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="footer__info">
+            <address class="footer__addr">Upės g. 9, Vilnius 09308</address>
+            <a class="footer__phone" href="tel:+37012345678">+370 (123) 45678</a>
+            <div class="footer__social">
+                <a href="#" class="footer__social-item"><img src="icons/facebook.svg" alt="facebook"></a>
+                <a href="#" class="footer__social-item"><img src="icons/instagram.svg" alt="instagram"></a>
+                <a href="#" class="footer__social-item"><img src="icons/pinterest.svg" alt="pinterest"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Užpildykite užsakymo formą</div>
+            <div class="modal__descr">ir mes Jums paskambinsime per 10 minučių</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Vardas" type="text">
+                <input name="phone" placeholder="tel. numeris" type="number">
+                <input name="email" placeholder="el. paštas" type="email">
+                <button class="button button_submit">Užsakyti konsiltaciją</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Jūsų uždakymas:</div>
+            <div class="modal__descr">Pulsometras Polar FT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Vardas" type="text">
+                <input name="phone" required placeholder="tel. numeris" type="number">
+                <input name="email" required placeholder="el. paštas" type="email">
+                <button class="button button_submit">Pirkti</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">D4kojame už Jūsų užklausą</div>
+            <div class="modal__descr">Mūsų atstovas netrukus su Jumis susisieks</div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Slick: -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <!-- tiny-slider: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
